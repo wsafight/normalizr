@@ -1,5 +1,5 @@
 {
-  "name": "normalizr2",
+  "name": "normalizr-helper",
   "version": "0.0.1",
   "author": "wsafight",
   "description": "Normalizes and denormalizes JSON according to schema for Redux and Flux applications",
