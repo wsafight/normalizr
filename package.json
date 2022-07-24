@@ -1,13 +1,14 @@
 {
-  "name": "normalizr",
-  "version": "3.6.2",
+  "name": "normalizr2",
+  "version": "0.0.1",
+  "author": "wsafight",
   "description": "Normalizes and denormalizes JSON according to schema for Redux and Flux applications",
   "bugs": {
-    "url": "https://github.com/paularmstrong/normalizr/issues"
+    "url": "https://github.com/wsafight/normalizr/issues"
   },
-  "homepage": "https://github.com/paularmstrong/normalizr",
+  "homepage": "https://github.com/wsafight/normalizr",
   "repository": {
-    "url": "https://github.com/paularmstrong/normalizr.git",
+    "url": "https://github.com/wsafight/normalizr.git",
     "type": "git"
   },
   "keywords": [
@@ -47,38 +48,39 @@
     "tsc:ci": "tsc --noEmit typescript-tests/*",
     "typecheck": "run-p flow:ci tsc:ci"
   },
-  "author": "Paul Armstrong",
+  
   "contributors": [
     "Dan Abramov"
   ],
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-flow": "^7.0.0",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^26.5.2",
-    "coveralls": "^3.1.0",
-    "eslint": "^7.11.0",
-    "eslint-config-prettier": "^6.13.0",
-    "eslint-plugin-jest": "^24.1.0",
-    "eslint-plugin-json": "^2.1.2",
-    "eslint-plugin-prettier": "^3.1.4",
-    "flow-bin": "^0.136.0",
-    "husky": "^2.3.0",
-    "immutable": "^3.8.1",
-    "jest": "^26.5.3",
-    "lint-staged": "^8.1.7",
+    "@babel/core": "^7.18.9",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-flow": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.0.0-alpha.0",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.6.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "flow-bin": "^0.183.0",
+    "husky": "^8.0.1",
+    "immutable": "^4.1.0",
+    "jest": "^29.0.0-alpha.0",
+    "lint-staged": "^13.0.3",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.1.2",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "rollup": "^2.32.0",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-filesize": "^9.0.2",
+    "rollup": "^3.0.0-2",
+    "@rollup/plugin-babel": "^5.3.1",
+    "rollup-plugin-filesize": "^9.1.2",
     "rollup-plugin-terser": "^7.0.2",
-    "typescript": "^3.4.5"
+    "typescript": "^4.0.0"
   },
   "dependencies": {}
 }

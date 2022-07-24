@@ -1,7 +1,8 @@
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
 import filesize from 'rollup-plugin-filesize';
-import { name } from './package.json';
 import { terser } from 'rollup-plugin-terser';
+
+const name = 'normalizr';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -17,5 +18,5 @@ export default {
     { file: `${destBase}.amd${destExtension}`, format: 'amd', name },
     { file: `${destBase}.browser${destExtension}`, format: 'iife', name },
   ],
-  plugins: [babel({}), isProduction && terser(), filesize()].filter(Boolean),
+  plugins: [babel({ babelHelpers: 'bundled' }), isProduction && terser(), filesize()].filter(Boolean),
 };

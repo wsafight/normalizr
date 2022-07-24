@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`UnionSchema denormalization denormalizes an array of multiple entities using a function to infer the schemaAttribute 1`] = `
-Object {
+{
   "id": 1,
   "type": "users",
   "username": "Janey",
@@ -17,7 +17,7 @@ Immutable.Map {
 `;
 
 exports[`UnionSchema denormalization denormalizes an array of multiple entities using a function to infer the schemaAttribute 3`] = `
-Object {
+{
   "groupname": "People",
   "id": 2,
   "type": "groups",
@@ -33,7 +33,7 @@ Immutable.Map {
 `;
 
 exports[`UnionSchema denormalization denormalizes an object using string schemaAttribute 1`] = `
-Object {
+{
   "id": 1,
   "type": "users",
   "username": "Janey",
@@ -49,7 +49,7 @@ Immutable.Map {
 `;
 
 exports[`UnionSchema denormalization denormalizes an object using string schemaAttribute 3`] = `
-Object {
+{
   "groupname": "People",
   "id": 2,
   "type": "groups",
@@ -65,7 +65,7 @@ Immutable.Map {
 `;
 
 exports[`UnionSchema denormalization returns the original value no schema is given 1`] = `
-Object {
+{
   "id": 1,
 }
 `;
@@ -77,16 +77,16 @@ Immutable.Map {
 `;
 
 exports[`UnionSchema normalization normalizes an array of multiple entities using a function to infer the schemaAttribute 1`] = `
-Object {
-  "entities": Object {
-    "users": Object {
-      "1": Object {
+{
+  "entities": {
+    "users": {
+      "1": {
         "id": 1,
         "username": "Janey",
       },
     },
   },
-  "result": Object {
+  "result": {
     "id": 1,
     "schema": "users",
   },
@@ -94,16 +94,16 @@ Object {
 `;
 
 exports[`UnionSchema normalization normalizes an array of multiple entities using a function to infer the schemaAttribute 2`] = `
-Object {
-  "entities": Object {
-    "groups": Object {
-      "2": Object {
+{
+  "entities": {
+    "groups": {
+      "2": {
         "groupname": "People",
         "id": 2,
       },
     },
   },
-  "result": Object {
+  "result": {
     "id": 2,
     "schema": "groups",
   },
@@ -111,9 +111,9 @@ Object {
 `;
 
 exports[`UnionSchema normalization normalizes an array of multiple entities using a function to infer the schemaAttribute 3`] = `
-Object {
-  "entities": Object {},
-  "result": Object {
+{
+  "entities": {},
+  "result": {
     "id": 3,
     "notdefined": "yep",
   },
@@ -121,16 +121,16 @@ Object {
 `;
 
 exports[`UnionSchema normalization normalizes an object using string schemaAttribute 1`] = `
-Object {
-  "entities": Object {
-    "users": Object {
-      "1": Object {
+{
+  "entities": {
+    "users": {
+      "1": {
         "id": 1,
         "type": "users",
       },
     },
   },
-  "result": Object {
+  "result": {
     "id": 1,
     "schema": "users",
   },
@@ -138,16 +138,16 @@ Object {
 `;
 
 exports[`UnionSchema normalization normalizes an object using string schemaAttribute 2`] = `
-Object {
-  "entities": Object {
-    "groups": Object {
-      "2": Object {
+{
+  "entities": {
+    "groups": {
+      "2": {
         "id": 2,
         "type": "groups",
       },
     },
   },
-  "result": Object {
+  "result": {
     "id": 2,
     "schema": "groups",
   },
